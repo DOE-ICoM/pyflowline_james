@@ -1,4 +1,4 @@
-
+[![DOI](https://zenodo.org/badge/523138410.svg)](https://zenodo.org/badge/latestdoi/523138410)
 
 # Liao. et al. 2022. Journal of Advances in Modeling Earth Systems
 
