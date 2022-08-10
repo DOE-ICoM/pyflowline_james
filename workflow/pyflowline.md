@@ -15,7 +15,9 @@ Install the Pyflowline package using Conda (recommended):
 
 ### Data preparation
 
-Configure the path in the JSON files under the `example` folder.
+1. Configure the path in the JSON files under the `example` folder.
+2. Set up model parameters, e.g., mesh resolution.
+
 
 ### Run simulation
 

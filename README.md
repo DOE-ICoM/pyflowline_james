@@ -63,9 +63,9 @@ Reference for each minted data source for your output data.  For example:
 
 ## Reproduce my experiment
 
-You need to follow three major steps to reproduce this study: 
+You need to follow two major steps to reproduce this study: 
 
-1. Run the [MPAS tool](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/jigsaw.md)
+1. (Optional, only needed for the `MPAS` mesh) Run the [JIGSAW tool](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/jigsaw.md)
 2. Run the [PyFlowline tool](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/pyflowline.md)
 
 
