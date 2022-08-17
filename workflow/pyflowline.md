@@ -1,5 +1,16 @@
 ## PyFlowline workflow
 
+
+### Overview
+
+PyFlowline models the conceptual river networks based on two major inputs:
+1. mesh
+2. vector-based river flowline
+
+
+
+
+
 ### USGS National Hydrography Dataset river flowline processing
 
 

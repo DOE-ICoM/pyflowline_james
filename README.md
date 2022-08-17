@@ -30,7 +30,7 @@ Liao. et al. (2022). Topological relationships-based flow direction modeling: ri
 
 ## Code reference
 
-References for each minted software release for all code involved.  
+References for each software release for all code involved.  
 
 Darren Engwirda: Generalised primal-dual grids for unstructured co-volume schemes, J. Comp. Phys., 375, pp. 155-176, https://doi.org/10.1016/j.jcp.2018.07.025, 2018.
 
@@ -39,20 +39,22 @@ Liao, Chang, & Cooper, Matt. (2022). Pyflowline: a mesh-independent river networ
 ## Data reference
 
 ### Input data
-Reference for each minted data source for your input data.  For example:
+
+Reference for each data source for your input data.  For example:
 
 | Data | Source| Download website | Usage |
 |-------|---------|-----------------|-----|
 | River flowline | USGS National Hydrography Dataset | [USGS national map](https://apps.nationalmap.gov/viewer/) | Raw river flowline | 
-| Coastal line | USGS | [USGS national map](https://apps.nationalmap.gov/viewer/) | Coastal for the MPAS mesh | 
+| Coastal line | USGS | [USGS national map](https://apps.nationalmap.gov/viewer/) | Coastal line for the MPAS mesh generation| 
 
 ### Output data
-Reference for each minted data source for your output data.  For example:
+
+Reference for each data source for your output data.  For example:
 | Data | Format| Content | Usage |
 |-------|---------|-----------------|-----|
-| Mesh | GeoJSON | The mesh file | Hydrology model | 
-| Conceptual river flowline | GeoJSON | The modeled river flowline | Hydrology model | 
-
+| Mesh | GeoJSON | The mesh file | Hydrologic model | 
+| Conceptual river flowline | GeoJSON | The modeled river flowline | Hydrologic model | 
+| Mesh info | JSON | Information of both mesh and conceptual flowline  | `HexWatershed` model | 
 
 ## Contributing modeling software
 
@@ -63,13 +65,13 @@ Reference for each minted data source for your output data.  For example:
 
 ## Reproduce my experiment
 
-You need to follow two major steps to reproduce this study: 
+You need to follow these two steps:
 
-1. (Optional, only needed for the `MPAS` mesh) Run the [JIGSAW tool](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/jigsaw.md)
+1. Run the [Mesh generation workflow](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/mesh_generation.md)
 2. Run the [PyFlowline tool](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/pyflowline.md)
 
 
 ## Reproduce my figures
 
-You are recommended to generate the plot using QGIS for all GeoJSON files.
+You are recommended to generate the plots using QGIS for all the GeoJSON files.
 
