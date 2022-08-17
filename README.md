@@ -2,7 +2,7 @@
 
 # Liao. et al. 2022. Journal of Advances in Modeling Earth Systems
 
-**Evaluation of river routing on a unstructured grid for coupled earth system modeling**
+**Topological relationships-based flow direction modeling: mesh-independent river networks representation**
 
 Chang Liao<sup>1\*</sup>, 
 Donghui Xu<sup>1</sup>,
