@@ -2,18 +2,19 @@
 
 ### Overview
 
-Our method is mesh independent, so theoratically you can use any meshes. However, we require the mesh data must meet the following format:
+Our method is mesh independent, so theoratically you can use any meshes. However, we require the mesh data must meet the following requirements:
 
 |  | Requirements | Note |
 |-------|---------|-----------------|
 | Format | GeoJSON |  |
 | Spatial reference | Geographic coordinate system (GCS) WGS84 |  |
+| Geometry | Polygon |  |
 | Field | ID |  |
 
 
 ### Structured meshes
 
-`PyFlowline` provides built-in algorithm for several structured meshes:
+`PyFlowline` provides built-in algorithms for several structured meshes:
 
 
 | Mesh | Description | Note |
@@ -24,16 +25,18 @@ Our method is mesh independent, so theoratically you can use any meshes. However
 
 Because PyFlowline requires mesh data must be GCS system, the generated meshes are automatically converted to the GCS spatial reference.
 
+### Unstructured meshes
+
+The MPAS mesh is the only unstructured mesh that is tested in this study.
 
 ### JIGSAW MPAS workflow
 
 #### Overview
 
-The mesh generation process is supported by the JIGSAW and MPAS tools.
+The MPAS mesh generation process is supported by the JIGSAW tool.
 
-In order to `burn` the river networks into the mesh so mesh cell aligh with the actual river flowlines, a vector-based flowline GIS dataset is required.
+In order to `burn` the river networks into the mesh so mesh cells aligh with the actual river flowlines, a vector-based flowline GIS dataset is required.
 This dataset was produced from the NHD dataset, and it was simplified using the PyFlowline to remove small rivers and braided rivers.
-
 The coastal line is also used in the mesh refinement.
 
 The final MPAS mesh resolution varies between 3 and 10 km with high resolution near the coastal line and river networks.
@@ -49,7 +52,6 @@ Currently, the `MOSART` model and our numerical model design do not support mult
 Therefore, a list of algorithms from the `Pyflowline` are applied to remove both small flowlines and braided rivers. 
 
 The filtered flowlines are then used by the `JIGSAW` to generate the mesh. 
-
 
 #### JIGSAW MPAS mesh generation
 

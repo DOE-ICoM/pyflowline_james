@@ -60,7 +60,7 @@ Reference for each data source for your output data.  For example:
 
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
-| PyFlowline | version | https://doi.org/10.5281/zenodo.6604337 | link to DOI dataset |
+| PyFlowline | latest | https://doi.org/10.5281/zenodo.6604337 | 10.5281/zenodo.6604337  |
 
 
 ## Reproduce my experiment
