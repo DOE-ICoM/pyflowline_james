@@ -67,8 +67,8 @@ Reference for each data source for your output data.  For example:
 
 You need to follow these two steps:
 
-1. Run the [Mesh generation workflow](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/mesh_generation.md)
-2. Run the [PyFlowline tool](https://github.com/DOE-ICoM/pyflowline_james/blob/main/workflow/pyflowline.md)
+1. Run the [Mesh generation workflow](https://github.com/DOE-ICoM/liao-etal_2022_pyflowline_james/blob/main/workflow/mesh_generation.md)
+2. Run the [PyFlowline tool](https://github.com/DOE-ICoM/liao-etal_2022_pyflowline_james/blob/main/workflow/pyflowline.md)
 
 
 ## Reproduce my figures
